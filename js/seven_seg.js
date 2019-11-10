@@ -27,7 +27,35 @@ function Seven_segment(){
       y: 140,
       width: _SEG_WIDTH,
       height:_V_SEG_LEN
-    }
+    },
+    _d_seg: {
+      state: 0,
+      x: 20,
+      y: 260,
+      width: _H_SEG_LEN,
+      height: _SEG_WIDTH
+    },
+    _e_seg: {
+      state: 0,
+      x: 20,
+      y: 140,
+      width: _SEG_WIDTH,
+      height: _V_SEG_LEN
+    },
+    _f_seg: {
+      state: 0,
+      x: 20,
+      y: 10,
+      width: _SEG_WIDTH,
+      height: _V_SEG_LEN
+    },
+    _g_seg: {
+      state: 0,
+      x: 20,
+      y: 135,
+      width: _H_SEG_LEN,
+      height: _SEG_WIDTH
+    },
   };
   //var _a_seg = 0;
   //var _b_seg = 0;
