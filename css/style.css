@@ -1,7 +1,10 @@
-body{
-  background-color: blue;
+#update_button {
+  width: 100px;
+  height: 25px;
 }
-
+#error_msg {
+  color: "red";
+}
 #sim{
   border: 10px solid black;
 }

@@ -6,10 +6,16 @@
   </head>
   <body>
     <canvas id="sim" width="200" height="300"></canvas>
-    <script src="js/seven_seg.js"></script>
+      <p id="error_msg"></p>
+      <p>ENTER CHARACTER (A-F,0-9):<input id="input_field" type="text"></p>
+      
+      <button id="update_button">Update</button>
+    
+    <script src="js/seven_segment_display_with_decimal.js"></script>
     <script>
-	  var seven_seg = new Seven_segment();
-	  seven_seg.init_display();
+	  var display = new Seven_segment_display_with_decimal();
+	  display.init_display();
+	  
     </script>
   </body>
 </html>
