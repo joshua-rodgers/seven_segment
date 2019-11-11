@@ -26,7 +26,7 @@ and widths of the segments as constants and making each segment a separate objec
 will likely be generalized by defining a segment class and simply instantiating the segments with
 their own values in a future version. Right now, I just needed the verbosity of this iteration 
 to help me get started :smile:
-## 11/10/2019
+## 11/10/2019 7:30PM
 First iteration done! :tada: The page consists of a textbox and a button to submit values to be displayed.
 Right now, __it only accepts hexadecimal values (capital letters)__. I know that 7 segments are capable of 
 many more than that, but that's as far as I got today. Some cleanup of the `seven_segment_display_with decimal`
@@ -49,7 +49,10 @@ and set `_pin_array` to point to the array stored at that key. The problem was t
 each segment was still holding a reference to the orginal `_pin_array`, so the state remained the same as it was upon 
 initialization. I finally thought of having the `state` property return the value of `_pin_array` from a function which 
 eliminates the standing reference to `_pin_array`, ensuring that when called I get the value as it is at that instant, 
-meaning, after the `_update()` function has set it to represent the proper character. Fun TiMeS! Looking forward to the next 
-component!
+meaning, after the `_update()` function has set it to represent the proper character. Fun TiMeS! I may go back and attempt
+to stylize the segments a bit more by placing them at an angle. According to the datasheet for the model I referenced, the
+angle is 10 degrees. From some reading I've learned that the angle is for readibility. Implementing this will likely require 
+using paths instead of the simple `strokeRect()` context method. I could probably define my own method that draws a polygon, accepts an angle, and does some math to put it on screen. We'll see.
+Looking forward to the next component!
 
 
