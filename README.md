@@ -1,5 +1,6 @@
 # seven_segment
 Emulation of a seven segment display.
+[gif of seven segment display running](7seg.gif)
 ## 11/10/2019 10:09AM
 Looked up a datasheet for a seven segment display to get information about 
 their implementation. It looks like I'll be doing a common anode display (only just learning what that means).
